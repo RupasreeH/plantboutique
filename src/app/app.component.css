@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  .grid-container > div {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #000;
+  } 
