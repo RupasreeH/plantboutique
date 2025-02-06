@@ -1,5 +1,9 @@
 .grid-container-signup {
     display: grid;
     grid-template-columns: auto auto auto auto;
-  gap: 10px;
+    gap: 10px;
   }
+button{
+  width: 120px;
+  background-color: #3c6e3c;
+}

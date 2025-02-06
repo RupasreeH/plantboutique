@@ -1,23 +1,39 @@
 <div class="grid-container-signup">
     <div>
-         <form>
-            <label>First Name</label>
-            <input type="text" FormControl = "fname" />
+         <form [formGroup] = "signUpForm" (ngSubmit)="OnSubmit()">
+            <legend>User Information</legend>
+            <div>
+                <label>First Name</label>
+                <input type="text" formControlName = "fname" /><br>
+            </div>
+           <div>
             <label>Last Name</label>
-            <input type="text" FormControl ="lname" />
-            <label>Email</label>
-            <input type="email" FormControl="email" />
-            <label>Password</label>
-            <input type="password" FormControl="password" />
-            <label>Confirm Password</label>
-            <input type="password" FormControl="cnpassword" />
-         </form>
+            <input type="text" formControlName ="lname" /><br>
+           </div>
+            <div>
+                <label>Email</label>
+                <input type="email" formControlName="email" /><br>
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" formControlName="password" /><br>
+            </div>
+            <div>
+                <label>Confirm Password</label>
+                <input type="password" formControlName="cnPassword" /><br>
+            </div>
+            <div>
+                <button class="btn btn-primary" type="submit">Click</button>
+            </div>
+        </form>
     </div>
     <div>
         <app-address>
         </app-address>
     </div>
     <div>
-        <app-plants-interest></app-plants-interest>
+        <app-plants-interest>
+        </app-plants-interest>
     </div>
+
 </div>
