@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ShoppingComponent {
   constructor(private http: HttpClient) {}
-
+//still working
   getData() {
     return this.http.get('assets/plants-data.json');
     
