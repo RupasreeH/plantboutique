@@ -1,0 +1,46 @@
+[
+    
+    {
+        "plantName": "Neem",
+        "imagePath": "./assets/images/plant1.jpg",
+        "description": "Plant description Plant description Plant description Plant description Plant description Plant description",
+        "cost": "25$"
+    },
+    {
+        "plantName": "Neem",
+        "imagePath": "./assets/images/plant2.jpg",
+        "description": "Plant description Plant description Plant description Plant description Plant description Plant description",
+        "cost": "25$"
+    },
+    {
+        "plantName": "Neem",
+        "imagePath": "./assets/images/plant1.jpg",
+        "description": "Plant description Plant description Plant description Plant description Plant description Plant description",
+        "cost": "25$"
+    },
+    {
+        "plantName": "Neem",
+        "imagePath": "./assets/images/plant1.jpg",
+        "description": "Plant description Plant description Plant description Plant description Plant description Plant description",
+        "cost": "25$"
+    },
+    {
+        "plantName": "Neem",
+        "imagePath": "./assets/images/plant1.jpg",
+        "description": "Plant description Plant description Plant description Plant description Plant description Plant description",
+        "cost": "25$"
+    },
+    {
+        "plantName": "Neem",
+        "imagePath": "./assets/images/plant1.jpg",
+        "description": "Plant description Plant description Plant description Plant description Plant description Plant description",
+        "cost": "25$"
+    },
+    {
+        "plantName": "Neem",
+        "imagePath": "./assets/images/plant1.jpg",
+        "description": "Plant description Plant description Plant description Plant description Plant description Plant description",
+        "cost": "25$"
+    }
+]
+

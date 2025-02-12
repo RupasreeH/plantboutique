@@ -10,14 +10,28 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ShoppingComponent {
   constructor(private http: HttpClient) {}
+  plants:any[]=[];
 //still working
   getData() {
-    return this.http.get('assets/plants-data.json');
+    return this.http.get('./assets/data/plants-data.json');
     
   }
   ngOnInit() {
+
+    this.plants = [
+      { id: 1, name: 'Neem', cost: 25, About: 'Plant description Plant description Plant description Plant description Plant description Plant description' },
+      { id: 2, name: 'Vinka', cost: 30, About: 'bob@example.com' },
+      { id: 3, name: 'Jasmin', cost: 28, About: 'charlie@example.com' },
+      { id: 1, name: 'Neem', cost: 25, About: 'Plant description Plant description Plant description Plant description Plant description Plant description' },
+      { id: 2, name: 'Vinka', cost: 30, About: 'bob@example.com' },
+      { id: 3, name: 'Jasmin', cost: 28, About: 'charlie@example.com' },
+      { id: 1, name: 'Neem', cost: 25, About: 'Plant description Plant description Plant description Plant description Plant description Plant description' },
+      { id: 2, name: 'Vinka', cost: 30, About: 'bob@example.com' },
+    ];
+
     this.getData().subscribe({
       next: (data) => {
+        //this.plants = data;
         console.log("plants data", data);
       },
       error: (error) => {
