@@ -18,32 +18,15 @@ export class ShoppingComponent {
   }
   ngOnInit() {
 
-    this.plants = [
-      { id: 1, name: 'Neem', cost: 25, About: 'Plant description Plant description Plant description Plant description Plant description Plant description' },
-      { id: 2, name: 'Vinka', cost: 30, About: 'bob@example.com' },
-      { id: 3, name: 'Jasmin', cost: 28, About: 'charlie@example.com' },
-      { id: 1, name: 'Neem', cost: 25, About: 'Plant description Plant description Plant description Plant description Plant description Plant description' },
-      { id: 2, name: 'Vinka', cost: 30, About: 'bob@example.com' },
-      { id: 3, name: 'Jasmin', cost: 28, About: 'charlie@example.com' },
-      { id: 1, name: 'Neem', cost: 25, About: 'Plant description Plant description Plant description Plant description Plant description Plant description' },
-      { id: 2, name: 'Vinka', cost: 30, About: 'bob@example.com' },
-    ];
+    this.http.get<any[]>('assets/data/plants-data.json')
+      .subscribe({
+        next: (data) => {
+          this.plants = data;
+        },
+        error: (error) => {
+          console.error('Failed to fetch data:', error);
+        }
+      });
 
-    this.getData().subscribe({
-      next: (data) => {
-        //this.plants = data;
-        console.log("plants data", data);
-      },
-      error: (error) => {
-        console.error("Error fetching data:", error);
-      }
-    });
-
-    // this.getData().subscribe(data => {
-    //   console.log("plants data", data);
-    //   // work with your data here
-    // });
-
-    
   }
 }

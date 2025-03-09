@@ -1,31 +1,9 @@
 <div class="container">
 @for(item of plants; track item){
     <div class="plant">
-       <div></div>
+       <div><img [src]="item.imagePath" (error)="item.imagePath='assets/images/plant1.jpg'" /></div>
        <div></div>
        <div></div>
     </div>
 }
-
-    <!-- <div class="">
-        Plant1
-    </div>
-    <div class="">
-        Plant1
-    </div>
-    <div class="">
-        Plant1
-    </div>
-    <div class="">
-        Plant1
-    </div>
-    <div class="">
-        Plant1
-    </div>
-    <div class="">
-        Plant1
-    </div>
-    <div class="">
-        Plant1
-    </div> -->
 </div>
